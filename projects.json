@@ -1,0 +1,209 @@
+[
+  {
+    "id": 1,
+    "title": "Multispectral Crop Stress",
+    "shortTitle": "Crop Stress",
+    "kicker": "EXPLAINABLE AI · COMPUTER VISION · RESEARCH",
+    "slug": "multispectral-crop-stress",
+    "description": "An explainable AI system built with Sentinel-2 satellite imagery and Vision Transformers to detect crop stress before visible symptoms appear.",
+    "why": "I built this to explore whether multispectral satellite information can identify crop stress earlier, while still giving a person a visual explanation of what influenced the model's prediction. It was developed as a government-funded research project and became the basis of a co-authored 2025 publication.",
+    "details": {
+      "whatGoesIn": "Sentinel-2 multispectral satellite imagery.",
+      "whatHappens": "Visual information is processed through a Vision Transformer-based model to detect crop stress.",
+      "howIExplainIt": "SHAP and Grad-CAM are used to create visual explanations around the model output.",
+      "extraLayer": "A RAG-based chatbot was implemented as an additional project feature."
+    },
+    "technologies": [
+      "Python",
+      "TensorFlow / Keras",
+      "Vision Transformers",
+      "OpenCV",
+      "SHAP",
+      "Grad-CAM",
+      "Gradio"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Patient Assistance",
+    "shortTitle": "Patient AI",
+    "kicker": "LLM · VOICE AI · MULTILINGUAL HEALTHCARE",
+    "slug": "multilingual-patient-ai",
+    "description": "A multilingual voice AI system supporting English, Arabic, Hindi and Malayalam for patient intake, appointment booking, returning-patient assistance and emergency escalation.",
+    "why": "I built this to make a patient-facing voice flow that could handle more than a single question-and-answer exchange. The system uses a state-driven conversation pipeline so the assistant can collect information, retrieve patient context, move toward booking, recommend a doctor, generate confirmations and escalate emergencies.",
+    "details": {
+      "conversation": "State-driven conversational pipeline for first-time and returning patients.",
+      "voiceInput": "Whisper and Deepgram are used within the documented voice pipeline for speech handling.",
+      "languageModel": "Groq-powered LLM processing generates the conversational response.",
+      "responseAndDelivery": "Edge TTS, SSE streaming, FastAPI, ReportLab and SMTP support the end-to-end flow."
+    },
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Groq",
+      "Whisper",
+      "Deepgram",
+      "Edge TTS",
+      "SSE",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cultural Knowledge",
+    "shortTitle": "Cultural Heritage RAG",
+    "kicker": "RAG · INFORMATION RETRIEVAL · CULTURAL HERITAGE",
+    "slug": "cultural-heritage-rag",
+    "description": "A retrieval-augmented system that pulls information from multiple cultural heritage APIs and generates context-aware answers grounded in historical sources.",
+    "why": "I built this because cultural information can live across different collections and APIs. Instead of treating one source as the entire answer, this build focuses on retrieving information from several sources, processing it, and keeping the generated response connected to those retrieved sources.",
+    "details": {
+      "retrieval": "Multi-source retrieval brings together relevant records before generation.",
+      "sources": "Europeana, Wikidata SPARQL and Smithsonian Open Access APIs.",
+      "grounding": "Responses are generated from retrieved historical information rather than only a free-form model response.",
+      "interface": "Python, Pandas and Streamlit form the documented application layer."
+    },
+    "technologies": [
+      "Python",
+      "RAG",
+      "Pandas",
+      "Streamlit",
+      "Europeana API",
+      "Wikidata SPARQL",
+      "Smithsonian Open Access"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gesture Control",
+    "shortTitle": "Hand Gesture HCI",
+    "kicker": "COMPUTER VISION · HUMAN COMPUTER INTERACTION",
+    "slug": "hand-gesture-hci",
+    "description": "A real-time hand gesture system that maps visual hand movements to computer controls such as cursor movement, volume control and click operations.",
+    "why": "I built this to explore a more direct interaction model where a camera becomes the input device. Instead of a conventional mouse-and-keyboard action, hand movement is interpreted as a control signal in real time.",
+    "details": {
+      "vision": "OpenCV handles the live video processing pipeline.",
+      "tracking": "MediaPipe hand tracking provides the hand landmark information.",
+      "control": "Recognized gestures are mapped to cursor, volume and click operations.",
+      "dataPath": "Camera frame → hand landmarks → gesture interpretation → computer action."
+    },
+    "technologies": [
+      "Python",
+      "MediaPipe",
+      "OpenCV",
+      "NumPy",
+      "Real-time CV"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Diabetes Prediction",
+    "shortTitle": "Diabetes Assistant",
+    "kicker": "HEALTHCARE AI · EXPLAINABLE AI",
+    "slug": "diabetes-prediction",
+    "description": "A prediction assistant presented as a healthcare-oriented AI flow, combining model inference, explainability and a lightweight user-facing delivery layer.",
+    "why": "I built this with a focus on not only returning a prediction, but putting an explanation around the result so the user-facing system has an interpretability layer rather than behaving like a black box.",
+    "details": {
+      "modelLayer": "TensorFlow is used in the documented model layer.",
+      "explanation": "SHAP is used for interpretation of the prediction flow.",
+      "delivery": "FastAPI and Telegram form the documented interface path.",
+      "flow": "Input → prediction → explanation → user-facing result."
+    },
+    "technologies": [
+      "TensorFlow",
+      "SHAP",
+      "FastAPI",
+      "Telegram",
+      "Healthcare AI"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Invoice Bot",
+    "shortTitle": "Automated Invoice Bot",
+    "kicker": "AUTOMATION · DOCUMENT GENERATION · TELEGRAM",
+    "slug": "automated-invoice-bot",
+    "description": "An automation workflow for taking structured business information, generating a finished invoice document and delivering the resulting PDF through a Telegram bot interface.",
+    "why": "I built this because repetitive document creation is a natural automation target. The build turns structured input into a repeatable document-generation flow instead of requiring the invoice to be manually assembled every time.",
+    "details": {
+      "input": "Structured invoice information supplied to the workflow.",
+      "process": "Python automation prepares the document content and formatting.",
+      "output": "A generated PDF invoice ready for delivery.",
+      "interface": "Telegram Bot API provides the user-facing interaction and delivery path."
+    },
+    "technologies": [
+      "Python",
+      "Telegram Bot API",
+      "PDF",
+      "Automation",
+      "Document Generation"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Real-Time YOLOv8",
+    "shortTitle": "YOLOv8",
+    "kicker": "COMPUTER VISION · OBJECT DETECTION · REAL TIME",
+    "slug": "realtime-yolov8",
+    "description": "A real-time object detection build using YOLOv8, OpenCV and a labeled dataset workflow, developed and tested in Google Colab.",
+    "why": "I built this to take a trained object detector out of a static dataset setting and into a real-time vision loop where frames can be processed and objects can be represented with detection boxes.",
+    "details": {
+      "detector": "YOLOv8 is the documented object detection model.",
+      "visionPipeline": "OpenCV supports the real-time image/video processing layer.",
+      "dataWorkflow": "LabelImg annotation is part of the documented dataset workflow.",
+      "environment": "Google Colab was used for development and testing."
+    },
+    "technologies": [
+      "YOLOv8",
+      "OpenCV",
+      "LabelImg",
+      "Google Colab",
+      "Object Detection"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Mental Health Support",
+    "shortTitle": "Mental Health Chatbot",
+    "kicker": "NLP · CONVERSATIONAL AI · LLM FINE-TUNING",
+    "slug": "mental-health-support",
+    "description": "An AI-powered mental health chatbot built around NLP and conversational interaction, using a custom dataset and a Flask-based delivery layer.",
+    "why": "I built this to explore how a custom conversational dataset and an adapted language model can be turned into a focused chatbot experience rather than a general-purpose assistant.",
+    "details": {
+      "model": "The documented training workflow used Intel neural-chat-7b-v3.",
+      "training": "NLP models were fine-tuned using a custom dataset for personalized healthcare query responses.",
+      "delivery": "Flask was used for the application layer.",
+      "environment": "Intel Developer Cloud and Google Colab were used in the documented development workflow."
+    },
+    "technologies": [
+      "Python",
+      "NLTK",
+      "Intel Neural Chat",
+      "Flask",
+      "Google Colab",
+      "Intel Developer Cloud"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Automation Workflows",
+    "shortTitle": "AI Automation",
+    "kicker": "BUSINESS AUTOMATION · AI AGENTS · ENGINEERING",
+    "slug": "automation-workflows",
+    "description": "A set of AI-driven business automation workflows developed during engineering work, including data fetching, automated messaging and invoice-generation flows.",
+    "why": "I built these workflows around turning repeatable business actions into agent-based processes: retrieve the required information, make a decision or generate content, and then carry out the next action with less manual repetition.",
+    "details": {
+      "agents": "AI agents and small-scale AI models were developed for business automation workflows.",
+      "workflow": "Fetch data → process or generate a message → execute an action.",
+      "documentedTools": "Python, GitHub, Copilot Studio and VS Code.",
+      "exampleFlow": "Data fetching and automated messaging, including an invoice creation bot."
+    },
+    "technologies": [
+      "Python",
+      "Copilot Studio",
+      "GitHub",
+      "VS Code",
+      "AI Agents",
+      "Business Automation"
+    ]
+  }
+]
